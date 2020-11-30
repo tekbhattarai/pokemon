@@ -1,0 +1,221 @@
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  
+  #myInput {
+    box-sizing: border-box;
+    width: 300px;
+    background-image: url('https://static.thenounproject.com/png/138572-200.png');
+    background-size: 30px;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 18px 10px 48px;
+    border-style: solid none solid solid;
+    border-color:  	#356abd;;
+
+    font-family: 'Special Elite', cursive;
+   
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+
+  
+  
+  
+  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    overflow: scroll;
+    font-family: 'Special Elite', cursive;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;
+    overflow: scroll;}
+
+    #nameDiv{
+        background-color: #FDF8F7;
+        width: 300px;
+  height: 300px;
+  overflow: scroll;
+    }
+  
+  
+.container{
+    margin-top: 10%;
+    width: 100%;
+
+}
+.container1{
+   
+    color: black;
+    font-family: 'Special Elite', cursive;
+
+}
+
+
+#contentdiv{
+  
+ width:100%;
+height: 400px;
+overflow: scroll;
+  }
+
+h3{
+    font-family: 'Special Elite', cursive;
+    text-decoration: underline;
+
+}
+  div.show::after{
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+  
+  .btnfix{
+
+    background-color:#FFCC03;
+    border:solid 2px	#356abd;
+    padding: 13px 20px ;
+    color: black;
+  }
+
+  div.show button:hover {
+    background: #000000;
+  }
+  .btn{
+    background-color:#FFCC03;
+    border:solid 2px	#356abd;
+    color: black;
+    font-family: 'Special Elite', cursive;
+  }
+ 
+  .btn:hover  {
+    background-color: black;
+    color: blanchedalmond;
+  }
+  #ability{
+      color:#FFCC03;
+  }
+  #move{
+    color:#356abd;;
+}
+#sprites{
+    color:rgb(170, 12, 12);
+}
+  @media (max-width: 1024px) { 
+    #myInput{
+        margin-bottom: 5%;
+        margin-top: 4%;
+    }
+
+.btn{
+  
+    padding: 1px 1x ;
+    font-size: 12px;
+    margin-bottom: 5%;
+    color:black;
+    background-color:#FFCC03;
+    border:solid 2px	#356abd;
+   
+    
+}
+.container1{
+    color: Black;
+   
+}
+#nameDiv{
+    background-color: #FDF8F7;
+    width: 100%;
+height: 200px;
+overflow: scroll;
+margin-bottom: 2%;
+}
+.btn:hover  {
+    background-color: black;
+    color: blanchedalmond;
+  }
+#contentdiv{
+  
+    width:100%;
+   height: 200px;
+   overflow: scroll;
+   color:black;
+     }
+
+     #myInput {
+        box-sizing: border-box;
+        width: 85%;
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
+        padding: 14px 20px 12px 45px;
+        border: none;
+        background-image: url('https://static.thenounproject.com/png/138572-200.png');
+        background-size: 30px;
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+    
+    
+       
+      }
+      div.show::after{
+        content: "";
+        clear: both;
+        display: table;
+        margin-bottom: 5%;
+        margin-top: 4%;
+        
+      }
+      
+      .btnfix{
+        background-color:#FFCC03;
+        border:solid 2p#356abd;
+        padding: 12px 14px ;
+        color: black;
+  
+      }
+
+      div.show button:hover {
+        background: #dee3e7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      
+      div.show  input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+      
+      div.show  button {
+          margin-top: 4%;
+        float: left;
+        width: 15%;
+        padding: 11px;
+        background-color:#FFCC03;
+        border:solid 2px	#356abd;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+      }
+      
+     
+      
+     
+   }
+   

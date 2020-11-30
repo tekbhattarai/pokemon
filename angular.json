@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "restapi-demo"
+  "defaultProject": "restapi-demo",
+  "cli": {
+    "analytics": "83baeae7-1056-42b7-9fc0-1f1fff79b191"
+  }
 }

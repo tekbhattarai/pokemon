@@ -1,0 +1,70 @@
+
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+
+<div class="dropdown" >
+  
+    <div id="myDropdown" class="show" >
+      
+        <input type= "text" id ="myInput"[(ngModel)]="PokemonName" (keyup)="filterFunction()" placeholder="Search Pokemon" (clickOutside)="hideAll1()"(click)="showAllPokemon()"> 
+   <button type="submit" class="btnfix" (click)="getPokemon()"><i class="fa fa-search"></i></button>
+   <div *ngIf ="showAll" id="nameDiv">
+
+      <a *ngFor = "let name of allPokemon; index as i" (click)="hideAll(i)" class="a">{{name}}</a>
+    </div>
+    </div>
+</div>
+   
+        </div> 
+
+
+            <div class="col-sm-6 ">
+                <input type="button" class="btn1 btn btn-outline   btn-lg  btn-group-justified"value="ShowAll" (click)="showAllContent()">
+                <div class="d-flex justify-content-around"> 
+
+                    <input type="button" class="btn0 btn btn-outline m-1 btn-lg btn-group-justified " value="Show Abilities" (click)="changeAbility()">
+                    <input type="button" class="btn0 btn btn-outline m-1 btn-lg btn-group-justified "value="Show Moves " (click)="changeMoves()">
+                    <input type="button" class="btn0 btn btn-outline m-1 btn-lg btn-group-justified "value="Show Sprites" (click)="changeSprites()">
+                    
+                   
+                </div>
+                <div class="container container1">
+                    <div class="row d-flex justify-content-around" >
+                        <div class="col-sm-3 justify-content-center">
+                    <div *ngIf ="showAbility" >
+                        <h3 id ="ability">Abilities</h3>
+                        <div *ngFor="let x of pokemonAbility" >Ability: {{x.ability.name}}  </div>
+                    </div>
+                   </div>
+                   <div class="vl "></div>
+                   <div class="col-sm-3 justify-content-center">
+                   
+                    <div *ngIf ="showMoves" >
+                        <h3 id="move"> Moves</h3>
+                        <div id="contentdiv">
+                        <div *ngFor="let x of pokemonMove" >Move: {{x.move.name}}  </div>
+                     </div>
+                        <div class="vl"></div>
+                    </div>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="col-sm-3 justify-content-center">
+                        
+                    <div *ngIf ="showSprites">
+                        <h3 id ="sprites">Sprites</h3>
+                        <div >Front Sprites: <img [src]="pokemonSprites.front_default"> </div>
+                        <div >Front Shiny: <img [src]="pokemonSprites.front_shiny"> </div>
+                        <div >Back Sprites: <img [src]="pokemonSprites.back_default"> </div>
+                        <div >Back Shiny: <img [src]="pokemonSprites.back_shiny"> </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+               
+        </div>
+        
+ 

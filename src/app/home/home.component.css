@@ -1,0 +1,81 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: rgb(248, 3, 3);
+  font-family: 'Special Elite', cursive;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+
+}
+.animated-title > div {
+  padding-top: 700px;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #FFCC03;
+  top: 0;
+
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: rgb(8, 24, 255);
+}
+.text-top{
+  margin-left: 30%;
+
+  color:rgb(170, 12, 12);
+  opacity: .8;
+}
+
+@media (max-width: 1024px) { 
+
+
+  .text-top{
+    margin-left: auto;
+    margin-top: none;
+  
+    color:rgb(170, 12, 12);
+    opacity: .8;
+  }
+  .animated-title > div {
+    padding-top: 100px;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+
+}
